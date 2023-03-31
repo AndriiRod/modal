@@ -22,8 +22,8 @@ body.show-modal {
   opacity: 0;
   visibility: hidden;
 
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -42,9 +42,13 @@ body.show-modal {
 
   z-index: 2;
   @media screen and (min-width: 320px) {
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  @media screen and (max-width: 768px) {
-    max-width: 280px;
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 54px;
   }
   &__cross {
     position: absolute;
@@ -69,6 +73,12 @@ body.show-modal {
     color: #131313;
 
     margin-bottom: 83px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 103px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
   }
   &__list {
     display: flex;
@@ -78,6 +88,12 @@ body.show-modal {
     gap: 60px;
 
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 32px;
+
+      margin-bottom: 40px;
+    }
   }
   &__labelCheck {
     cursor: pointer;
@@ -223,9 +239,18 @@ body.show-modal {
     border-radius: 10px;
 
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.4;
 
     color: #131313;
+
+    @media screen and (min-width: 768px) {
+      width: 368px;
+      height: 42px;
+      margin-bottom: 16px;
+
+      font-size: 14px;
+    }
+
     &:focus {
       outline-color: #f8d24e;
     }
@@ -235,6 +260,9 @@ body.show-modal {
     resize: none;
 
     margin-bottom: 26px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
   &__btn {
     font-weight: 600;
@@ -248,6 +276,11 @@ body.show-modal {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 758px) {
+      font-size: 14px;
+      line-height: 1.21;
+    }
 
     &:hover,
     &:focus {

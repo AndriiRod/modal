@@ -7,7 +7,12 @@ const refs = {
 
 function toggleModal() {
   document.body.classList.toggle("show-modal");
-  refs.inputName.focus();
+
+  if (document.body.classList.contains("show-modal"))
+    refs.backdrop.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
 }
 
 refs.openModalBtn.addEventListener("click", toggleModal);

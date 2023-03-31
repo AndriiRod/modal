@@ -82,7 +82,7 @@ body.show-modal {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -97,9 +97,17 @@ body.show-modal {
   padding: 28px;
   z-index: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .modal {
-    max-width: 280px;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+    padding: 32px 54px;
   }
 }
 .modal__cross {
@@ -123,6 +131,13 @@ body.show-modal {
   color: #131313;
   margin-bottom: 83px;
 }
+@media screen and (min-width: 768px) {
+  .form__header {
+    margin-bottom: 103px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
 .form__list {
   display: flex;
   flex-direction: column;
@@ -130,6 +145,13 @@ body.show-modal {
   align-items: center;
   gap: 60px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .form__list {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
 }
 .form__labelCheck {
   cursor: pointer;
@@ -244,8 +266,16 @@ body.show-modal {
   border: 1px solid #84a178;
   border-radius: 10px;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.4;
   color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .form__input {
+    width: 368px;
+    height: 42px;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
 }
 .form__input:focus {
   outline-color: #f8d24e;
@@ -254,6 +284,11 @@ body.show-modal {
   height: 65px;
   resize: none;
   margin-bottom: 26px;
+}
+@media screen and (min-width: 768px) {
+  .form__area {
+    margin-bottom: 32px;
+  }
 }
 .form__btn {
   font-weight: 600;
@@ -264,6 +299,12 @@ body.show-modal {
   border-radius: 10px;
   padding: 12px 34px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 758px) {
+  .form__btn {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
 .form__btn:hover, .form__btn:focus {
   background-color: #0a8817;
