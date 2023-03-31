@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Lorem, ipsum dolor.</h1>
+      <button class="main__btn" type="button" data-active="open">
+        Buy now
+        <svg width="12" height="12">
+          <use
+            class="main__icon"
+            href="./images/icons.svg#icon-arrow-right"
+          ></use>
+        </svg>
+      </button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+        veritatis distinctio, non veniam officia fugiat aut. Quaerat distinctio
+        debitis, tempora repudiandae corporis aut quae, sunt recusandae rerum
+        vel fugiat est! Ad fuga quasi optio voluptatum consequuntur possimus et
+        odit ab. Autem veniam, expedita quod consequuntur eaque praesentium
+        repellendus voluptate ipsum cupiditate quisquam natus molestiae
+        pariatur. Expedita quae laudantium voluptates ab! Et cupiditate cum
+        voluptate asperiores deleniti impedit tempora illo possimus facere
+        nesciunt porro quae ut assumenda rem qui, commodi, corporis amet! Nihil
+        impedit a animi maxime. Ducimus modi sequi commodi? Quidem excepturi
+        similique soluta mollitia non praesentium alias nihil ad velit, cumque
+        accusamus, minus fuga rerum temporibus aperiam enim incidunt ipsa?
+        Quaerat non provident tempora dolore temporibus enim nobis atque? In,
+        eos pariatur quia rem eveniet asperiores iste itaque vero. Adipisci quis
+        cum sequi necessitatibus. Reiciendis quos dolorem, illum earum nesciunt
+        esse qui natus? Labore illo distinctio maiores voluptates aperiam. Sit
+        vitae molestiae quas laudantium, maiores ullam cum dolorem odio magni,
+        nisi vero blanditiis nobis, impedit nulla perspiciatis fugiat laboriosam
+        repellendus tempore unde consequatur. Quisquam natus vitae sed modi
+        placeat. Ipsum dolor maiores quibusdam sit facilis molestiae delectus,
+        expedita placeat, ipsa esse voluptate distinctio, consequuntur eveniet
+        corrupti excepturi voluptatum. Vitae voluptas deserunt explicabo
+        accusantium eos quam, laborum ratione consequuntur minus? Aliquid totam
+        ut a, corporis accusamus omnis numquam quos voluptatibus natus
+        doloremque praesentium? Modi eveniet adipisci dolores perspiciatis
+        aliquam incidunt, unde illo quis praesentium! Quae asperiores harum at
+        minima dolor. Distinctio iste ipsum, inventore quos officiis, cupiditate
+        omnis numquam voluptas odio iure officia unde eius quis vel dolor ad
+        itaque possimus consequatur recusandae laborum cum culpa. Ut error
+        dolorum at. Laboriosam non saepe earum labore voluptatibus ut facere
+        voluptate distinctio voluptas aspernatur atque architecto sapiente
+        consequuntur ipsum assumenda commodi enim autem, maxime ex delectus.
+        Veritatis alias quibusdam nam quas libero?
+      </p>
+      <div class="backdrop">
+        <div class="modal">
+          <button class="modal__cross" type="button">
+            <svg width="20" height="20">
+              <use
+                class="modal__icon"
+                href="./images/icons.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+          <form class="form">
+            <h1 class="form__header">Buy now</h1>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__labelCheck"
+                  ><input
+                    class="form__check"
+                    type="checkbox"
+                    name="type-ice-cream"
+                    value="classic"
+                  />
+                  <div class="form__newCheck form__newCheck--green">
+                    <div class="form__round form__round--green"></div>
+                    <p class="form__text">ice cream</p>
+                  </div></label
+                >
+              </li>
+              <li class="form__item">
+                <label class="form__labelCheck"
+                  ><input
+                    class="form__check"
+                    type="checkbox"
+                    name="type-ice-cream"
+                    value="ice-coffee"
+                  />
+                  <div class="form__newCheck form__newCheck--yellow">
+                    <div class="form__round form__round--yellow"></div>
+                    <p class="form__text">ice cream</p>
+                  </div></label
+                >
+              </li>
+              <li class="form__item">
+                <label class="form__labelCheck"
+                  ><input
+                    class="form__check"
+                    type="checkbox"
+                    name="type-ice-cream"
+                    value="milkshake"
+                  />
+                  <div class="form__newCheck form__newCheck--brown">
+                    <div class="form__round form__round--brown"></div>
+                    <p class="form__text">ice cream</p>
+                  </div></label
+                >
+              </li>
+            </ul>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
+            <input
+              class="form__input"
+              type="tel"
+              name="tel"
+              placeholder="Phone"
+            />
+            <textarea
+              class="form__input form__area"
+              name="comment"
+              placeholder="Comment"
+            ></textarea>
+            <button class="form__btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/modal.js"></script>
+  </body>
+</html>
