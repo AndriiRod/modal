@@ -108,6 +108,8 @@ body.show-modal {
   .modal {
     width: 568px;
     padding: 32px 54px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .modal__cross {
