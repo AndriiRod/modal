@@ -32,7 +32,11 @@ ul {
 button {
   padding: 0;
   border: none;
-  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  button {
+    cursor: pointer;
+  }
 }
 
 .main__btn {
@@ -174,8 +178,10 @@ body.show-modal .modal {
     margin-bottom: 40px;
   }
 }
-.form__labelCheck {
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .form__labelCheck {
+    cursor: pointer;
+  }
 }
 .form__check {
   -webkit-appearance: none;
